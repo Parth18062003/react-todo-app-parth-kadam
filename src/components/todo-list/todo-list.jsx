@@ -27,7 +27,7 @@ export const TodoList = (props) => {
           {todos.map((todoItem) => (
             <Checkbox
               key={todoItem.id}
-              label={todoItem.label}
+              label={todoItem.task}
               checked={todoItem.checked}
               onClick={() => toggleCheck(todoItem.id)}
               onKeyUp={(e) => handleKeyUp(e, todoItem.id)}
