@@ -4,7 +4,7 @@ import { TodoList } from "./components/todo-list";
 import { TodoResults } from "./components/todo-results";
 import "./index.scss";
 
-const todosTemplate = [
+/* const todosTemplate = [
   {
     id: 0,
     label: "Fix an ability to display all tasks",
@@ -35,13 +35,14 @@ const todosTemplate = [
     label: "Fix an ability to count completed tasks",
     checked: false,
   },
-];
+]; */
 
 export const App = () => {
   const [todos, setTodos] = React.useState([]);
 
   return (
     <div className="app">
+      <div className="text-center mb-3">Parth Kadam</div>
       <TodoList todos={todos} setTodos={setTodos} />
       <TodoResults todos={todos} setTodos={setTodos} />
       <TodoForm todos={todos} setTodos={setTodos} />
